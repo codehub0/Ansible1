@@ -1,7 +1,6 @@
-- name: 1st play
-  host: all
-  debug:
-    task:
-      -name: print hello msg
-      msg:
-        hello form role
+- name: Demo on playbook
+  hosts: all
+  tasks:
+    - name: print hello world
+      debug:
+        msg: hello there world i am coimg.

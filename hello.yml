@@ -1,0 +1,5 @@
+name: print hello
+  host: localhost
+  debug:
+    msg:
+      hello form hello file

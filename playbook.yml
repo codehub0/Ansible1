@@ -1,6 +1,0 @@
-- name: demo playbook
-  host: all
-  task:
-    - name: print 1st task
-      debug:
-        msg: hellow world

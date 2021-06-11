@@ -1,0 +1,4 @@
+- name: print hello
+  debug:
+    msg:
+      hello form role

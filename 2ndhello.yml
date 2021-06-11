@@ -1,6 +1,6 @@
-- name: from main
+- name: main
   hosts: all
   tasks:
     - name: to the user
       debug:
-        msg: hello there user let me know if you want something different.
+        msg: user we have set up a new id and password which is you guys going to need it.

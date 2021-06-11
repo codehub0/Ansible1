@@ -1,0 +1,6 @@
+- name: from main
+  hosts: all
+  tasks:
+    - name: to the user
+      debug:
+        msg: hello there user let me know if you want something different.

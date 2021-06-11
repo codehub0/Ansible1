@@ -1,4 +1,5 @@
 - name: print hello
+  host: localhost
   debug:
     msg:
       hello form role

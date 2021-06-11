@@ -1,5 +1,6 @@
-- name: print hello
-  host: localhost
-  debug:
-    msg:
-      hello form role
+- name: from main
+  hosts: all
+  tasks:
+    - name: to the user
+      debug:
+        msg: hello there user let me know if you want something different

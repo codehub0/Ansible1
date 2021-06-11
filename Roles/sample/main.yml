@@ -1,0 +1,6 @@
+- name: main
+  hosts: all
+  tasks:
+    - name: to the user
+      debug:
+        msg: this is form role directory

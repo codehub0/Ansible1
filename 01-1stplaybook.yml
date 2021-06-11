@@ -1,0 +1,7 @@
+- name: 1st play
+  host: all
+  debug:
+    task:
+      -name: print hello msg
+      msg:
+        hello form role

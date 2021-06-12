@@ -1,5 +1,4 @@
 - name: main
-  hosts: all
   tasks:
     name: to the staffs
     debug:

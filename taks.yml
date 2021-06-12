@@ -1,8 +1,9 @@
 - name: name on variable
   hosts: all
+
   tasks:
-    -name: print variable from task
-     vars:
-     URl: task.example.com
-     debug:
-     msg: url = {{URL}}
+    - name: print variable
+      vars:
+        URL: task.example.com
+        debug:
+        msg: url = {{URL}}

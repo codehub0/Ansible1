@@ -3,6 +3,6 @@
   tasks:
     -name: print variable from task
      vars:
-     URL: task.example.com
+     URl: task.example.com
      debug:
      msg: url = {{URL}}

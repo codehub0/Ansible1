@@ -1,7 +1,7 @@
 - name: name on variable
   hosts: all
   tasks:
-    - name: print variable from task
+    -name: print variable from task
       vars:
         URL: task.example.com
         debug:

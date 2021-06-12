@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     -name: print variable from task
-      vars:
-        URL: task.example.com
-        debug:
-          msg: url = {{URL}}
+     vars:
+     URL: task.example.com
+     debug:
+     msg: url = {{URL}}

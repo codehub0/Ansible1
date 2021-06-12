@@ -2,8 +2,8 @@
   hosts: all
 
   tasks:
-    - name: print variable
+    - name: print variable from tasks
       vars:
-        URL: play.example.com
-        debug:
+        URL: task.example.com
+      dsebug:
         msg: url = {{URL}}

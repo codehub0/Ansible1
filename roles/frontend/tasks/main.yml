@@ -1,7 +1,7 @@
 - name: name on variable
   hosts: all
   vars:
-    URL: play.example.com
+    URL: singh.play.com
 
   tasks:
     - name: print variable

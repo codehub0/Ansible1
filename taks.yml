@@ -1,9 +1,8 @@
 - name: name on variable
   hosts: all
-
   tasks:
-    - name: print variable
+    - name: print variable from task
       vars:
-        URL: play.example.com
+        URL: task.example.com
         debug:
-        msg: url = {{URL}}
+          msg: url = {{URL}}

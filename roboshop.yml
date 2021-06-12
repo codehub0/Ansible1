@@ -1,1 +1,6 @@
-- name: setup roboshop file project
+- name: setup roboshop components
+  hosts: all
+  roles:
+    - name: Load from Frontend
+      role: frontend
+

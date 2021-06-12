@@ -2,8 +2,4 @@
   tasks:
     name: to the staffs
     debug:
-      msg: you all need to be at office sharp 9 am
-
-- name: print hello
-  debug:
-    msg: Hello form role
+      msg: you all need to be at office sharp 9 am form roles sample

@@ -1,5 +1,9 @@
-- name: frontend task
-  vars:
-    url: task.example.com
-    debug:
-      msg: url = {{URL}}
+- name: name on variable
+  hosts: all
+
+  tasks:
+    - name: print variable
+      vars:
+        URL: play.example.com
+        debug:
+        msg: url = {{URL}}

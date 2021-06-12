@@ -1,8 +1,5 @@
 - name: name on variable
   vars:
     URL: singh.play.com
-
-  tasks:
-    - name: print variable
-      debug:
-        msg: url = {{URL}}
+    debug:
+      msg: url = {{URL}}

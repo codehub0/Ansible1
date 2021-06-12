@@ -1,0 +1,5 @@
+- name: frontend task
+  vars:
+    url: task.example.com
+    debug:
+      msg: url = {{URL}}

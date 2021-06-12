@@ -1,3 +1,0 @@
-- name: 1st paly
-  debug:
-    msg: Hello form roles

@@ -1,5 +1,3 @@
-- name: main
-  tasks:
-    name: to the staffs
-    debug:
-      msg: you all need to be at office sharp 9 am form roles sample
+- name: to the staffs
+  debug:
+  msg: you all need to be at office sharp 9 am form roles sample

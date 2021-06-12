@@ -1,5 +1,4 @@
 - name: name on variable
-  hosts: all
   vars:
     URL: singh.play.com
 

@@ -1,5 +1,6 @@
 - name: setup roboshop components
-  hosts: all
+  hosts: FRONTEND
+  become: yes
   roles:
     - name: Load from Frontend
       role: frontend

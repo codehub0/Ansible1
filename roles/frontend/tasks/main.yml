@@ -1,8 +1,10 @@
-- name: Print Component Name
-    debug:
-      msf: Component = Frontend
-
 - name: Install Nginx
   yum:
     name: nginx
-    state: latest
+    state: present
+
+
+
+
+
+

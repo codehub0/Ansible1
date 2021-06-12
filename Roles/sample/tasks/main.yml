@@ -1,0 +1,6 @@
+- name: 1st paly
+  hosts: all
+  tasks:
+    - name: prit msg
+      debug:
+        msg: Hello from roles

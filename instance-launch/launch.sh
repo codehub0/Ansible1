@@ -7,7 +7,7 @@ if [ -z "${COMPONENT}" ]; then
   echo "Component Input is Needed"
   exit 1
 fi
-LID=i-0ccafa5ea5d222e1c
+LID=lt-0fb7a0a2ebe886b59
 LVER=1
 
 ## Validate If Instance is already there

@@ -21,10 +21,10 @@
     dest: /usr/share/nginx/html/
     remote_src: yes
 
-- name: copy of nginx roboshop.conf
+- name: copy of nginx roboshop.config
   copy:
-    src: roboshop.conf
-    dest: /etc/nginx/default.d/roboshop.conf
+    src: roboshop.config
+    dest: /etc/nginx/default.d/roboshop.config
 
 
 - name: start nginx

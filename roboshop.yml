@@ -15,3 +15,12 @@
   roles:
     - name: Load Frontend Role
       role: frontend
+
+- name: Setup roboshop project -- MongoDB Component
+  hosts: MONGODB
+  become: yes
+  tags:
+    - mongodb
+  roles:
+    - name: Load MongoDb Role
+      role: mongodb

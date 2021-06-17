@@ -3,44 +3,27 @@
     name: nginx
     state: present
 
+- name: Download Package
+  include_role:
+    name: common
+    tasks_from: download-from-github
+  vars:
+    APP_DIR: /usr/share/nginx/html
+    EXTRACT_DIR: /usr/share/nginx
 
-- name: remove old directory
-  ansible.builtin.file:
-    path: /usr/share/nginx/html
-    state: absent
-
-- name: download and Extract package
-  ansible.builtin.unarchive:
-    src: https://github.com/roboshop-devops-project/frontend/archive/main.zip
-    dest: /usr/share/nginx
-    remote_src: yes
-
-- name: Copy extracted directory
+- name: Copy Extracted Directory
   ansible.builtin.copy:
-    src: /usr/share/nginx/frontend-main/
+    src: /usr/share/nginx/frontend-main/static/
     dest: /usr/share/nginx/html/
     remote_src: yes
 
-- name: copy of nginx roboshop.config
+- name: Copy Nginx RoboShop Config
   copy:
-    src: roboshop.config
-    dest: /etc/nginx/default.d/roboshop.config
-    remote_src: yes
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
 
-
-- name: start nginx
+- name: Start Nignx
   ansible.builtin.systemd:
     state: restarted
     name: nginx
     enabled: yes
-
-
-
-
-
-
-
-
-
-
-
